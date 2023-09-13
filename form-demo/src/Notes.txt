@@ -1,0 +1,9 @@
+among many other advantages using form hook enable to stop multiple rendering 
+while onChange takes place in form fields.
+
+
+react form hook:we use register method to add validation rules in form fields.there is a control object which 
+has methods , those methods helps to use register method(for registering components in react hook form)
+
+.
+
