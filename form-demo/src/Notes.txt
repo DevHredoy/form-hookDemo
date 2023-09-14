@@ -3,7 +3,53 @@ while onChange takes place in form fields.
 
 
 react form hook:we use register method to add validation rules in form fields.there is a control object which 
-has methods , those methods helps to use register method(for registering components in react hook form)
+has methods , those methods helps to use register method(for registering components in react hook form).
 
-.
 
+// In code evolution series there is the summary of each video topic in the end of each video clip.
+
+
+
+video 13:
+
+video 14: here it is shown that if there are multiple values in a field for example there are two fields for saving two phone numbers
+, that two numbers are saved in as array.
+
+video 15: if there are multiple phone numbers and array of 
+object phone number will be created .
+17: the things written in the fields of a form will be shown under tag.
+21:we can disable a field , in this condition validation conditions will not be applied . and we can conditionally enable or disablea
+a field.
+
+
+22: to show and report error we can use handle submission method.
+23:The submit button moreover the submission can be disable untill the conditions meets to submit.
+
+26:ASYNC validation says is the email exists in the backend then this will validate and show it already exists.
+
+
+27:onSubmit	string	Validation is triggered on the submit event, and inputs attach onChange event listeners to re-validate themselves.
+onBlur	string	Validation is triggered on the blur event.
+onChange	string	Validation is triggered on the changeevent for each input, leading to multiple re-renders. Warning: this often comes with a significant impact on performance.
+onTouched	string	
+Validation is initially triggered on the first blur event. After that, it is triggered on every change event.
+
+Note: when using with Controller, make sure to wire up onBlur with the render prop.
+
+all	string	Validation is triggered on both blur and change events.
+
+
+
+24:
+isSubmitted:	boolean	Set to true after the form is submitted. Will remain true until the reset method is invoked.
+isSubmitSuccessful:	boolean	
+Indicate the form was successfully submitted without any runtime error.
+
+isSubmitting :	boolean	true if the form is currently being submitted. false otherwise
+
+submitCount :	number	Number of times the form was submitted.
+
+28:name	undefined	Triggers validation on all fields.	trigger()
+string	Triggers validation on a specific field value by name	trigger("yourDetails.firstName")
+string[]	Triggers validation on multiple fields by name.	trigger(["yourDetails.lastName"])
+shouldFocus	boolean	Should focus the input during setting an error. This only works when the input's reference is registered, it will not work for custom register as well.
